@@ -1,0 +1,29 @@
+{
+    "name": "ufucms/laravel-uainfo",
+    "description": "根据UA判断浏览器类型和版本，操作系统，设备型号的laravel包 ",
+    "keywords": ["browser", "os", "operating system", "language", "detection","浏览器","操作系统","设备型号"],
+    "authors": [{
+        "name": "ufucms",
+        "email": "ufucms@ufucms.com"
+    }],
+    "homepage":"https://github.com/ufucms/laravel-uainfo",
+    "license":"MIT",
+    "require": {
+        "php": "^5.3.3 || ^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ufucms\\LaravelUainfo\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Ufucms\\LaravelUainfo\\Providers\\UainfoServiceProvider"
+            ],
+            "aliases": {
+                "Uainfo": "Ufucms\\LaravelUainfo\\Facades\\Uainfo"
+            }
+        }
+    }
+}
